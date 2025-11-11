@@ -6,8 +6,9 @@ Project: Public Data Extraction, Transformation & Loading (ETL)
 Technologies: Python, Pandas, PostgreSQL, SQLAlchemy, Requests
 
 ## *** IMPORTANT NOTES: ***
-**1. docker - for Postgres - was not spin up. However, an existing local Postgres DB is used.**
-**2. due to size limitations, CSV & XLSX files were not added as part of push to GitHub. These files are identified as 'CSV/XLSX not added' in the Directory Structure below**
+- **1. docker - for Postgres - was not spin up. However, an existing local Postgres DB is used.**
+
+- **2. due to size limitations, CSV & XLSX files were not added as part of push to GitHub. These files are identified as 'CSV/XLSX not added' in the Directory Structure below**
 
 ## Table of Contents
 
