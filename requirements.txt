@@ -1,0 +1,9 @@
+# the below were installed (e.g. using pip install)
+pandas
+sqlalchemy
+psycopg2-binary
+requests
+beautifulsoup4
+python-dotenv
+matplotlib
+openpyxl
