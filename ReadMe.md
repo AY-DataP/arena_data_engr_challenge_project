@@ -5,7 +5,9 @@ Welcome to the **Arena Challenge Demo** project! This repository contains the co
 Project: Public Data Extraction, Transformation & Loading (ETL)
 Technologies: Python, Pandas, PostgreSQL, SQLAlchemy, Requests
 
-## *** IMPORTANT NOTE: docker - for Postgres - was not spin up. However, an existing local Postgres DB is used.***
+## *** IMPORTANT NOTES: ***
+# 1. docker - for Postgres - was not spin up. However, an existing local Postgres DB is used.
+# 2. due to size limitations, CSV & XLSX files were not added as part of push to GitHub. These files are identified as 'CSV/XLSX not added' in the Directory Structure below
 
 ## Table of Contents
 
@@ -41,6 +43,7 @@ Description: Detailed skill, knowledge, and ability data by occupation (SOC code
 URL: https://www.onetcenter.org/database.html
 
 ## PostgreSQL DB Layers
+```
 arena_de_prep_db
 │
 ├── raw/
@@ -55,6 +58,7 @@ arena_de_prep_db
     └── Views
         ├── vw_oews_avg_over_onet       # Aggregated view (6-digit → subcodes)
         └── vw_onet_closest_oews        # O*NET skills linked to parent OEWS metrics
+```        
 
 * Raw layer → stores the raw extracted data. Cleansing limited to: 
     (1)column name convention (to 'snake_case') 
@@ -165,12 +169,13 @@ Purpose: provide analysis reports based on requirements. Create views in the cur
 
 
 ## Directory Structure
+```
 arena_challenge_demo/
 │
 ├── data_output/
-│   ├── raw/                        # Saved csv extracts
-│   └── curated/                    # Cleaned and merged datasets (csv)
-├── public_datasets
+│   ├── raw/                        # Saved csv extracts. # CSV not added
+│   └── curated/                    # Cleaned and merged datasets (csv & PNG). # CSV not added
+├── public_datasets                 # XLSX not added
 │   ├── oesm24st
 │   ├── related occupations.xlsx 
 ├── queries/
@@ -183,6 +188,7 @@ arena_challenge_demo/
 │   ├── analysis_pandas.py              # performs user requirement's analysis using pandas
 ├── README.md
 └── requirements.txt
+```
 
 ## Some Issues Faced
 - Initially scrapping with BS4 was time-consuming. Since XLSX file existed and formatted, I used that.
@@ -197,7 +203,9 @@ This project demonstrates a complete mini data engineering pipeline:
 - Analytical joins & aggregation views
 
 It highlights strong fundamentals in:
+```
 ✅ SQL design
 ✅ Python ETL scripting
 ✅ Schema organization
 ✅ Analytical data readiness
+```
